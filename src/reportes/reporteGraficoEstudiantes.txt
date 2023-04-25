@@ -1,0 +1,43 @@
+
+         Agrupacion de estudiantes por direccion
+
+                   Direccion: Guayaquil
+     Cedula       Nombre       Apellido       Telefono
+   0501722664      Sofia        Ortega      0981623712
+
+                     Direccion: Ambato
+
+     Cedula       Nombre       Apellido       Telefono
+   1850435171      Marco         Lopez      8432874827
+
+   1876397120      Juan          Lopez      0938791275
+
+  Total de e3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  19/01/23 20:44                           Page 1 of 1
+
+
