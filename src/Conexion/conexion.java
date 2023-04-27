@@ -38,6 +38,7 @@ public class conexion {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://localhost/registroestudiantes", "root", "");
+            //conn = DriverManager.getConnection("jdbc:mysql://databases.000webhost.com//id20366588_registroestudiantes", "id20366588_root", "-=[Tv$vE]SgVo82u");
             System.out.println("ok");
             return conn;
         } catch (Exception ex) {

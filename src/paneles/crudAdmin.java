@@ -656,7 +656,22 @@ public class crudAdmin extends javax.swing.JPanel {
                     String[] datosUser = new String[8];
                     datosUser[0] = jtxtCedula.getText();
                     datosUser[1] = jtxtUsuario.getText();
-                    datosUser[2] = new String(jpassClave.getPassword());
+                    try {
+                        //datosUser[2] = new String(jpassClave.getPassword());
+                        datosUser[2] = new EncriptadorAES().encriptar(new String(jpassClave.getPassword()), "SisTech");
+                    } catch (UnsupportedEncodingException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (NoSuchAlgorithmException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (InvalidKeyException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (NoSuchPaddingException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (IllegalBlockSizeException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (BadPaddingException ex) {
+                        Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     datosUser[3] = jtxtNombre.getText();
                     datosUser[4] = jtxtApellido.getText();
                     datosUser[5] = jtxtTelefono.getText();
@@ -766,7 +781,22 @@ public class crudAdmin extends javax.swing.JPanel {
             String[] datosUser = new String[8];
             datosUser[0] = jtxtCedula.getText();
             datosUser[1] = jtxtUsuario.getText();
-            datosUser[2] = new String(jpassClave.getPassword());
+            try {
+                //datosUser[2] = new String(jpassClave.getPassword());
+                datosUser[2] = new EncriptadorAES().encriptar(new String(jpassClave.getPassword()), "SisTech");
+            } catch (UnsupportedEncodingException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NoSuchAlgorithmException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (InvalidKeyException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NoSuchPaddingException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IllegalBlockSizeException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (BadPaddingException ex) {
+                Logger.getLogger(crudAdmin.class.getName()).log(Level.SEVERE, null, ex);
+            }
             datosUser[3] = jtxtNombre.getText();
             datosUser[4] = jtxtApellido.getText();
             datosUser[5] = jtxtTelefono.getText();
