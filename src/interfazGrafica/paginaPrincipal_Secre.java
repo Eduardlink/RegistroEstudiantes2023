@@ -56,11 +56,18 @@ public class paginaPrincipal_Secre extends javax.swing.JFrame {
         //Iconos Principal 
         ImageIcon iconoInicio = new ImageIcon(getClass().getResource("/imagenesFrames/homeSecre.png"));
         ImageIcon iconoArchivo = new ImageIcon(getClass().getResource("/imagenesFrames/archivoSecre.png"));
+        ImageIcon iconoReportes = new ImageIcon(getClass().getResource("/imagenesFrames/dashboard.png"));
         ImageIcon iconoSalir = new ImageIcon(getClass().getResource("/imagenesFrames/cerrar.png"));
 
         //Iconos Archivo
         ImageIcon iconoCRUDEstudiantes = new ImageIcon(getClass().getResource("/imagenesFrames/graduado.png"));
         ImageIcon iconoInactivos = new ImageIcon(getClass().getResource("/imagenesFrames/borrar-usuario.png"));
+        
+        //Iconos Reportes
+        ImageIcon iconoReporteGeneral = new ImageIcon(getClass().getResource("/imagenesFrames/general.png"));
+        //ImageIcon iconoReporteCedula = new ImageIcon(getClass().getResource("/imagenesFrames/porcedula.png"));
+        //ImageIcon iconoReporteDetalleApellido = new ImageIcon(getClass().getResource("/imagenesFrames/detalleApellido.png"));
+        ImageIcon iconoReporteGrafico = new ImageIcon(getClass().getResource("/imagenesFrames/RGrafico.png"));
 
         //--------------------------------------MENU ITEM---------------------------------
         //Menu Archivo
@@ -77,6 +84,32 @@ public class paginaPrincipal_Secre extends javax.swing.JFrame {
 
             }
         });
+                //Menu Reportes
+        MenuItem menuReporteGeneral = new MenuItem(iconoReporteGeneral, "General", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CambiaPanel(jpanPrincipal, new paneles.reporteGeneral());
+            }
+        });
+       /* MenuItem menuReporteCedula = new MenuItem(iconoReporteCedula, "Por Cédula", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CambiaPanel(jpPanelUsuarios, new paneles.reporteCedula());
+            }
+        });
+        MenuItem menuReporteDetalleApelido = new MenuItem(iconoReporteDetalleApellido, "Detalle por Apellido", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CambiaPanel(jpPanelUsuarios, new paneles.reporteDetalleApellido());
+            }
+        });
+        */
+        MenuItem menuReporteGrafico = new MenuItem(iconoReporteGrafico, "Gráfico", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CambiaPanel(jpanPrincipal, new paneles.ReporteGrafico());
+            }
+        });
 
         //Menu Principal
         MenuItem menuInicio = new MenuItem(iconoInicio, "Inicio", new ActionListener() {
@@ -88,6 +121,7 @@ public class paginaPrincipal_Secre extends javax.swing.JFrame {
         }
         );
         MenuItem menuArchivo = new MenuItem(iconoArchivo, "Archivo", null, menuArchivoCRUD, menuArchivoInactivos);
+        MenuItem menuReportes = new MenuItem(iconoReportes, "Reportes", null, menuReporteGeneral, menuReporteGrafico);
         MenuItem menuSalir = new MenuItem(iconoSalir, "Salir", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -95,7 +129,7 @@ public class paginaPrincipal_Secre extends javax.swing.JFrame {
             }
         });
 
-        addMenu(menuInicio, menuArchivo, menuSalir);
+        addMenu(menuInicio, menuArchivo, menuReportes,menuSalir);
 
     }
 

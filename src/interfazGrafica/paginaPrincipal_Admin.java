@@ -59,8 +59,8 @@ public class paginaPrincipal_Admin extends javax.swing.JFrame {
 
         //Iconos Reportes
         ImageIcon iconoReporteGeneral = new ImageIcon(getClass().getResource("/imagenesFrames/general.png"));
-        ImageIcon iconoReporteCedula = new ImageIcon(getClass().getResource("/imagenesFrames/porcedula.png"));
-        ImageIcon iconoReporteDetalleApellido = new ImageIcon(getClass().getResource("/imagenesFrames/detalleApellido.png"));
+        //ImageIcon iconoReporteCedula = new ImageIcon(getClass().getResource("/imagenesFrames/porcedula.png"));
+        //ImageIcon iconoReporteDetalleApellido = new ImageIcon(getClass().getResource("/imagenesFrames/detalleApellido.png"));
         ImageIcon iconoReporteGrafico = new ImageIcon(getClass().getResource("/imagenesFrames/RGrafico.png"));
 
         //----------------------------MENU ITEM----------------------------------------------------------
@@ -97,7 +97,7 @@ public class paginaPrincipal_Admin extends javax.swing.JFrame {
                 new CambiaPanel(jpPanelUsuarios, new paneles.reporteGeneral());
             }
         });
-        MenuItem menuReporteCedula = new MenuItem(iconoReporteCedula, "Por Cédula", new ActionListener() {
+       /* MenuItem menuReporteCedula = new MenuItem(iconoReporteCedula, "Por Cédula", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new CambiaPanel(jpPanelUsuarios, new paneles.reporteCedula());
@@ -109,6 +109,7 @@ public class paginaPrincipal_Admin extends javax.swing.JFrame {
                 new CambiaPanel(jpPanelUsuarios, new paneles.reporteDetalleApellido());
             }
         });
+        */
         MenuItem menuReporteGrafico = new MenuItem(iconoReporteGrafico, "Gráfico", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -125,7 +126,8 @@ public class paginaPrincipal_Admin extends javax.swing.JFrame {
             }
         });
         MenuItem menuAdmin = new MenuItem(iconoAdmin, "Administrar", null, menuAgregarUsuarios, menuAgregarEstudiantes, menuUsuarioInactivo, menuEstudianteInactivo);
-        MenuItem menuReportes = new MenuItem(iconoReportes, "Reportes", null, menuReporteGeneral, menuReporteCedula, menuReporteDetalleApelido, menuReporteGrafico);
+        //MenuItem menuReportes = new MenuItem(iconoReportes, "Reportes", null, menuReporteGeneral, menuReporteCedula, menuReporteDetalleApelido, menuReporteGrafico);
+        MenuItem menuReportes = new MenuItem(iconoReportes, "Reportes", null, menuReporteGeneral, menuReporteGrafico);
         MenuItem menuSalir = new MenuItem(iconoSalir, "Salir", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
