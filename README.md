@@ -19,11 +19,9 @@ En este repositorio se presenta un sistema donde se registra los estudiantes mat
 ## Requerimientos de software
 
 ### Tecnologias
+- Netbeans IDE 8
 - Java
-
-### Sistema Operativo
-
-El sistema operativo principal utilizado será Windows, tanto para el servidor como para los dispositivos clientes. Aunque al ser una aplicación java, se garantiza que funciones en otros sistemas operativos como MacOS o distribuciones Linux, aunque para que funcione el sensor de huellas se deberá obtener los drivers correspondientes para cada sistema operativo.
+- Sensor de huellas Digital Persona B100E16647
 
 ### Controladores y complementos
 
@@ -37,7 +35,7 @@ El controlador del lector de huellas se encuentra en la carpeta Driver
 
 Sensor de huellas Digital Persona B100E16647, que será útil para la verificación de credenciales del usuario durante el inicio de sesión
 
-## Authors
+## Autores
 
 - [@ChristianChico](https://github.com/ChristianCLop)
 - [@AnthonySolis](https://github.com/Anthony6887)
