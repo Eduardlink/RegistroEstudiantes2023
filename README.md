@@ -18,6 +18,9 @@ En este repositorio se presenta un sistema donde se registra los estudiantes mat
 
 ## Requerimientos de software
 
+### Tecnologias
+- Java
+
 ### Sistema Operativo
 
 El sistema operativo principal utilizado será Windows, tanto para el servidor como para los dispositivos clientes. Aunque al ser una aplicación java, se garantiza que funciones en otros sistemas operativos como MacOS o distribuciones Linux, aunque para que funcione el sensor de huellas se deberá obtener los drivers correspondientes para cada sistema operativo.
