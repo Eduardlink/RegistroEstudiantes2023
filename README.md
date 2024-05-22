@@ -36,6 +36,6 @@ Sensor de huellas Digital Persona B100E16647, que será útil para la verificaci
 
 ## Authors
 
-- [@ChristianCLop](https://github.com/ChristianCLop)
-- [@Anthony6887](https://github.com/Anthony6887)
-- [@Yachitzu](https://github.com/Yachitzu)
+- [@ChristianChico](https://github.com/ChristianCLop)
+- [@AnthonySolis](https://github.com/Anthony6887)
+- [@EstefaníaMora](https://github.com/Yachitzu)
