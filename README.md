@@ -6,12 +6,12 @@ En este repositorio se presenta un sistema donde se registra los estudiantes mat
 
 ## Caracteríticas
 
-### Usuario administrador
+### Usuario administrador/a
 - Inicio de sesión con huella digital
 - Gestión de estudiantes (CRUD)
 - Gestión de usuarios (CRUD)
 
-### Usuario secretaria
+### Usuario secretaria/o
 - Inicio de sesión con huella digital
 - Gestión de estudiantes (CRUD)
 - Visualización de reportes en formato pdf
@@ -33,3 +33,9 @@ El controlador del lector de huellas se encuentra en la carpeta Driver
 ## Requerimientos de hardware
 
 Sensor de huellas Digital Persona B100E16647, que será útil para la verificación de credenciales del usuario durante el inicio de sesión
+
+## Authors
+
+- [@ChristianCLop](https://github.com/ChristianCLop)
+- [@Anthony6887](https://github.com/Anthony6887)
+- [@Yachitzu](https://github.com/Yachitzu)
