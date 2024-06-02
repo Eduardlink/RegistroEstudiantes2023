@@ -3,6 +3,7 @@
 
 En este repositorio se presenta un sistema donde se registra los estudiantes matriculados en una institución educativa.
 
+![App Screenshot](/src/imagenesFrames/Loguin_Admin.png)
 
 ## Caracteríticas
 
